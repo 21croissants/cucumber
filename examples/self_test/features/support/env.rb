@@ -15,3 +15,7 @@ end
 After('@background_tagged_before_on_outline') do
   @cukes.should == '888'
 end
+
+AfterStep('@after_step_hook') do
+  puts "AfterStep called"
+end
